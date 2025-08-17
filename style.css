@@ -61,16 +61,134 @@ p {
     padding: 0 2rem;
 }
 
+/* Logo Styles */
 .logo {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--gold);
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-.logo:hover {
-    color: var(--gold-light);
+.logo-icon {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+}
+
+.logo-globe {
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--black);
+    border-radius: 50%;
+    position: relative;
+    background: transparent;
+}
+
+.logo-globe::before,
+.logo-globe::after {
+    content: '';
+    position: absolute;
+    background: var(--black);
+}
+
+.logo-globe::before {
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.logo-globe::after {
+    width: 2px;
+    height: 100%;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+.logo-airplane {
+    position: absolute;
+    top: -8px;
+    right: -5px;
+    width: 20px;
+    height: 12px;
+    background: var(--gold);
+    clip-path: polygon(0 50%, 100% 0, 100% 100%);
+    transform: rotate(45deg);
+}
+
+.logo-arc {
+    position: absolute;
+    bottom: -5px;
+    left: -5px;
+    width: 30px;
+    height: 20px;
+    border: 2px solid var(--gold);
+    border-top: none;
+    border-right: none;
+    border-radius: 0 0 0 20px;
+    transform: rotate(-45deg);
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.logo-text-main {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--black);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.logo-text-sub {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--gray-dark);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.logo:hover .logo-airplane {
+    transform: rotate(45deg) translateX(2px);
+    transition: transform 0.3s ease;
+}
+
+.logo:hover .logo-arc {
+    border-color: var(--gold-dark);
+    transition: border-color 0.3s ease;
+}
+
+/* Mobile logo adjustments */
+@media (max-width: 768px) {
+    .logo-icon {
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+    }
+    
+    .logo-text-main {
+        font-size: 1.5rem;
+    }
+    
+    .logo-text-sub {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-text-main {
+        font-size: 1.3rem;
+    }
+    
+    .logo-text-sub {
+        font-size: 0.7rem;
+    }
 }
 
 .nav-menu {
