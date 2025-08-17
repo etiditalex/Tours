@@ -43,7 +43,7 @@ p {
 
 /* Header Styles */
 .header {
-    background: white;
+    background: var(--black);
     padding: 1rem 0;
     position: fixed;
     width: 100%;
@@ -79,7 +79,7 @@ p {
 .logo-globe {
     width: 100%;
     height: 100%;
-    border: 2px solid var(--black);
+    border: 2px solid var(--white);
     border-radius: 50%;
     position: relative;
     background: transparent;
@@ -89,7 +89,7 @@ p {
 .logo-globe::after {
     content: '';
     position: absolute;
-    background: var(--black);
+    background: var(--white);
 }
 
 .logo-globe::before {
@@ -141,7 +141,7 @@ p {
 .logo-text-main {
     font-size: 1.8rem;
     font-weight: 700;
-    color: var(--black);
+    color: var(--white);
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -149,7 +149,7 @@ p {
 .logo-text-sub {
     font-size: 0.9rem;
     font-weight: 500;
-    color: var(--gray-dark);
+    color: var(--gray);
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
@@ -198,7 +198,7 @@ p {
 }
 
 .nav-menu a {
-    color: var(--black);
+    color: var(--white);
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
