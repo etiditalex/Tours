@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Blog - Luxury Travel</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">Luxury Travel</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="booking.html">Book Now</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');">
+        <div class="hero-content">
+            <h1>Travel Blog</h1>
+            <p>Insights, tips, and stories from our luxury travel experts</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Featured Article -->
+        <section class="section">
+            <div class="card fade-in-up" style="max-width: 800px; margin: 0 auto;">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Santorini Sunset" class="card-img" style="height: 400px;">
+                <div class="card-body">
+                    <div class="blog-meta">
+                        <span><i class="fas fa-calendar"></i> December 15, 2024</span>
+                        <span style="margin-left: 1rem;"><i class="fas fa-user"></i> Sarah Mitchell</span>
+                        <span style="margin-left: 1rem;"><i class="fas fa-tag"></i> Destinations</span>
+                    </div>
+                    <h2 class="card-title">The Ultimate Guide to Santorini: Beyond the Postcard Views</h2>
+                    <p class="card-text">Discover the hidden gems and authentic experiences that make Santorini more than just a beautiful backdrop. From secret beaches to local tavernas, we reveal the island's best-kept secrets for the discerning traveler.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Categories -->
+        <section class="section">
+            <div style="background: var(--gray-light); padding: 2rem; border-radius: 10px; margin-bottom: 3rem;">
+                <h3 style="margin-bottom: 1rem;">Browse by Category</h3>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <button class="btn" style="background: var(--gold);">All Posts</button>
+                    <button class="btn btn-outline">Destinations</button>
+                    <button class="btn btn-outline">Travel Tips</button>
+                    <button class="btn btn-outline">Luxury Hotels</button>
+                    <button class="btn btn-outline">Food & Dining</button>
+                    <button class="btn btn-outline">Adventure</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Articles -->
+        <section class="section">
+            <div class="section-title">
+                <h2>Recent Articles</h2>
+            </div>
+            <div class="grid grid-3">
+                <article class="blog-card fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Maldives Resort" class="card-img">
+                    <div class="card-body">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> December 12, 2024</span>
+                            <span style="margin-left: 1rem;"><i class="fas fa-tag"></i> Luxury Hotels</span>
+                        </div>
+                        <h3 class="card-title">Top 10 Overwater Bungalows in the Maldives</h3>
+                        <p class="card-text">Experience ultimate luxury with our curated selection of the most exclusive overwater accommodations in the Maldives.</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </article>
+
+                <article class="blog-card fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1502602898534-47d3c0c4b0d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Swiss Alps" class="card-img">
+                    <div class="card-body">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> December 10, 2024</span>
+                            <span style="margin-left: 1rem;"><i class="fas fa-tag"></i> Adventure</span>
+                        </div>
+                        <h3 class="card-title">Winter Wonderland: Luxury Ski Resorts in the Swiss Alps</h3>
+                        <p class="card-text">Discover the most prestigious ski resorts offering world-class amenities and breathtaking mountain views.</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </article>
+
+                <article class="blog-card fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1555992336-03a23c7b20ee?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Amalfi Coast" class="card-img">
+                    <div class="card-body">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> December 8, 2024</span>
+                            <span style="margin-left: 1rem;"><i class="fas fa-tag"></i> Food & Dining</span>
+                        </div>
+                        <h3 class="card-title">Culinary Journey Through the Amalfi Coast</h3>
+                        <p class="card-text">Explore the region's finest restaurants and authentic Italian cuisine from Naples to Positano.</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </article>
+
+                <article class="blog-card fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Paris" class="card-img">
+                    <div class="card-body">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> December 5, 2024</span>
+                            <span style="margin-left: 1rem;"><i class="fas fa-tag"></i> Travel Tips</span>
+                        </div>
+                        <h3 class="card-title">Paris Like a Local: Insider Tips for Luxury Travelers</h3>
+                        <p class="card-text">Skip the tourist traps and experience the authentic Paris that locals love, with exclusive access to hidden gems.</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </article>
+
+                <article class="blog-card fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Bali" class="card-img">
+                    <div class="card-body">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> December 3, 2024</span>
+                            <span style="margin-left: 1rem;"><i class="fas fa-tag"></i> Wellness</span>
+                        </div>
+                        <h3 class="card-title">Wellness Retreats in Bali: Mind, Body, and Soul</h3>
+                        <p class="card-text">Discover the most luxurious wellness resorts offering traditional healing and modern spa treatments.</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </article>
+
+                <article class="blog-card fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Kyoto" class="card-img">
+                    <div class="card-body">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> December 1, 2024</span>
+                            <span style="margin-left: 1rem;"><i class="fas fa-tag"></i> Culture</span>
+                        </div>
+                        <h3 class="card-title">The Art of Japanese Hospitality: Luxury Ryokans in Kyoto</h3>
+                        <p class="card-text">Experience traditional Japanese luxury with our guide to the most exclusive ryokans and cultural experiences.</p>
+                        <a href="#" class="btn">Read More</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Travel Tips Section -->
+        <section class="section">
+            <div class="section-title">
+                <h2>Travel Tips & Advice</h2>
+            </div>
+            <div class="grid grid-2">
+                <div class="card fade-in-up">
+                    <div class="card-body">
+                        <h3 class="card-title"><i class="fas fa-suitcase" style="color: var(--gold); margin-right: 0.5rem;"></i>Packing for Luxury Travel</h3>
+                        <p class="card-text">Essential items and packing strategies for the discerning traveler, from formal wear to adventure gear.</p>
+                        <ul style="margin-top: 1rem; color: var(--gray-dark);">
+                            <li>Versatile clothing for different occasions</li>
+                            <li>Quality luggage and travel accessories</li>
+                            <li>Essential documents and backup copies</li>
+                            <li>Technology and entertainment essentials</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card fade-in-up">
+                    <div class="card-body">
+                        <h3 class="card-title"><i class="fas fa-credit-card" style="color: var(--gold); margin-right: 0.5rem;"></i>Travel Insurance Guide</h3>
+                        <p class="card-text">Understanding the importance of comprehensive travel insurance for luxury trips and high-value experiences.</p>
+                        <ul style="margin-top: 1rem; color: var(--gray-dark);">
+                            <li>Coverage for luxury accommodations</li>
+                            <li>Protection for expensive equipment</li>
+                            <li>Medical evacuation and assistance</li>
+                            <li>Trip cancellation and interruption</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Signup -->
+        <section class="section">
+            <div style="text-align: center; background: var(--black); color: var(--white); padding: 3rem; border-radius: 15px;">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter for exclusive travel insights, special offers, and destination guides.</p>
+                <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 2rem; flex-wrap: wrap;">
+                    <input type="email" placeholder="Enter your email" style="padding: 12px; border: none; border-radius: 5px; min-width: 300px;">
+                    <button class="btn">Subscribe</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Tags -->
+        <section class="section">
+            <div style="text-align: center;">
+                <h3 style="margin-bottom: 1rem;">Popular Tags</h3>
+                <div style="display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap;">
+                    <span style="background: var(--gold); color: var(--black); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">#LuxuryTravel</span>
+                    <span style="background: var(--gray-light); color: var(--black); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">#TravelTips</span>
+                    <span style="background: var(--gray-light); color: var(--black); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">#Destinations</span>
+                    <span style="background: var(--gray-light); color: var(--black); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">#LuxuryHotels</span>
+                    <span style="background: var(--gray-light); color: var(--black); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">#Adventure</span>
+                    <span style="background: var(--gray-light); color: var(--black); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem;">#FoodTravel</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Luxury Travel</h3>
+                <p>Creating unforgettable luxury travel experiences since 2008. Your journey to extraordinary destinations starts here.</p>
+                <div style="margin-top: 1rem;">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="blog.html">Blog</a>
+                <a href="booking.html">Book Now</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Popular Destinations</h3>
+                <a href="#">Santorini, Greece</a>
+                <a href="#">Maldives</a>
+                <a href="#">Swiss Alps</a>
+                <a href="#">Bali, Indonesia</a>
+                <a href="#">Amalfi Coast, Italy</a>
+                <a href="#">Kyoto, Japan</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@luxurytravel.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Luxury Ave, Suite 100<br>New York, NY 10001</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Luxury Travel. All rights reserved. | Privacy Policy | Terms of Service</p>
+        </div>
+    </footer>
+
+    <script>
+        // Add fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in-up').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+
+        // Category filter functionality
+        document.querySelectorAll('.btn-outline').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Remove active class from all buttons
+                document.querySelectorAll('.btn-outline').forEach(b => b.classList.remove('btn'));
+                document.querySelectorAll('.btn-outline').forEach(b => b.classList.add('btn-outline'));
+                
+                // Add active class to clicked button
+                this.classList.remove('btn-outline');
+                this.classList.add('btn');
+                this.style.background = 'var(--gold)';
+                
+                // Add filter logic here
+                alert('Filter applied! This would filter the blog posts by category.');
+            });
+        });
+
+        // Newsletter signup
+        document.querySelector('input[type="email"]').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                alert('Thank you for subscribing to our newsletter!');
+            }
+        });
+
+        document.querySelector('.btn').addEventListener('click', function() {
+            if (this.textContent === 'Subscribe') {
+                alert('Thank you for subscribing to our newsletter!');
+            }
+        });
+    </script>
+</body>
+</html>

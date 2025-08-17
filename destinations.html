@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Luxury Travel</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">Luxury Travel</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="booking.html">Book Now</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');">
+        <div class="hero-content">
+            <h1>Explore Our Destinations</h1>
+            <p>Discover the world's most beautiful and exclusive travel destinations</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Filter Section -->
+        <section class="section">
+            <div style="background: var(--gray-light); padding: 2rem; border-radius: 10px; margin-bottom: 3rem;">
+                <h3 style="margin-bottom: 1rem;">Filter Destinations</h3>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <select style="padding: 8px 12px; border: 1px solid #ddd; border-radius: 5px;">
+                        <option>All Regions</option>
+                        <option>Europe</option>
+                        <option>Asia</option>
+                        <option>Americas</option>
+                        <option>Africa</option>
+                        <option>Oceania</option>
+                    </select>
+                    <select style="padding: 8px 12px; border: 1px solid #ddd; border-radius: 5px;">
+                        <option>All Types</option>
+                        <option>Beach & Island</option>
+                        <option>Mountain & Adventure</option>
+                        <option>City & Culture</option>
+                        <option>Safari & Wildlife</option>
+                        <option>Wellness & Spa</option>
+                    </select>
+                    <select style="padding: 8px 12px; border: 1px solid #ddd; border-radius: 5px;">
+                        <option>All Prices</option>
+                        <option>$1,000 - $2,000</option>
+                        <option>$2,000 - $5,000</option>
+                        <option>$5,000 - $10,000</option>
+                        <option>$10,000+</option>
+                    </select>
+                    <button class="btn" style="padding: 8px 16px;">Apply Filters</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Destinations -->
+        <section class="section">
+            <div class="section-title">
+                <h2>Featured Destinations</h2>
+            </div>
+            <div class="grid grid-3">
+                <div class="destination-card fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Santorini">
+                    <div class="destination-overlay">
+                        <h3>Santorini, Greece</h3>
+                        <p>Mediterranean paradise with stunning sunsets</p>
+                        <div style="margin-top: 1rem;">
+                            <span style="color: var(--gold); font-weight: 600;">From $2,499</span>
+                            <a href="booking.html" class="btn" style="margin-left: 1rem;">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-card fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Maldives">
+                    <div class="destination-overlay">
+                        <h3>Maldives</h3>
+                        <p>Overwater bungalows and crystal-clear waters</p>
+                        <div style="margin-top: 1rem;">
+                            <span style="color: var(--gold); font-weight: 600;">From $3,299</span>
+                            <a href="booking.html" class="btn" style="margin-left: 1rem;">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="destination-card fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1502602898534-47d3c0c4b0d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Swiss Alps">
+                    <div class="destination-overlay">
+                        <h3>Swiss Alps</h3>
+                        <p>Mountain adventures and luxury chalets</p>
+                        <div style="margin-top: 1rem;">
+                            <span style="color: var(--gold); font-weight: 600;">From $1,899</span>
+                            <a href="booking.html" class="btn" style="margin-left: 1rem;">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- All Destinations -->
+        <section class="section">
+            <div class="section-title">
+                <h2>All Destinations</h2>
+            </div>
+            <div class="grid grid-3">
+                <!-- Europe -->
+                <div class="card fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1555992336-03a23c7b20ee?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Amalfi Coast" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Amalfi Coast, Italy</h3>
+                        <p class="card-text">Dramatic coastline with colorful villages and Mediterranean charm.</p>
+                        <div class="card-price">From $2,799</div>
+                        <a href="booking.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+                <div class="card fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Paris" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Paris, France</h3>
+                        <p class="card-text">The City of Light with world-class dining and cultural experiences.</p>
+                        <div class="card-price">From $1,999</div>
+                        <a href="booking.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+                <div class="card fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Barcelona" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Barcelona, Spain</h3>
+                        <p class="card-text">Art, architecture, and Mediterranean lifestyle in one vibrant city.</p>
+                        <div class="card-price">From $1,699</div>
+                        <a href="booking.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Asia -->
+                <div class="card fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Bali" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Bali, Indonesia</h3>
+                        <p class="card-text">Tropical paradise with spiritual temples and pristine beaches.</p>
+                        <div class="card-price">From $1,899</div>
+                        <a href="booking.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+                <div class="card fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Kyoto" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Kyoto, Japan</h3>
+                        <p class="card-text">Ancient temples, traditional gardens, and authentic Japanese culture.</p>
+                        <div class="card-price">From $2,299</div>
+                        <a href="booking.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+                <div class="card fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1536599018102-9f803c140fc1?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Thailand" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Phuket, Thailand</h3>
+                        <p class="card-text">Island paradise with luxury resorts and authentic Thai experiences.</p>
+                        <div class="card-price">From $1,599</div>
+                        <a href="booking.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Americas -->
+                <div class="card fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="New York" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">New York City, USA</h3>
+                        <p class="card-text">The city that never sleeps with world-class entertainment and dining.</p>
+                        <div class="card-price">From $1,799</div>
+                        <a href="booking.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+                <div class="card fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1516834474-48c0abc2a902?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Rio de Janeiro" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Rio de Janeiro, Brazil</h3>
+                        <p class="card-text">Vibrant culture, stunning beaches, and iconic landmarks.</p>
+                        <div class="card-price">From $1,999</div>
+                        <a href="booking.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+                <div class="card fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Banff" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Banff, Canada</h3>
+                        <p class="card-text">Mountain wilderness with luxury lodges and outdoor adventures.</p>
+                        <div class="card-price">From $2,099</div>
+                        <a href="booking.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Africa -->
+                <div class="card fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Safari" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Serengeti, Tanzania</h3>
+                        <p class="card-text">Wildlife safari adventures in the heart of Africa.</p>
+                        <div class="card-price">From $3,999</div>
+                        <a href="booking.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+                <div class="card fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Cape Town" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Cape Town, South Africa</h3>
+                        <p class="card-text">Stunning landscapes, wine regions, and cultural diversity.</p>
+                        <div class="card-price">From $2,399</div>
+                        <a href="booking.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+                <div class="card fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Marrakech" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Marrakech, Morocco</h3>
+                        <p class="card-text">Exotic souks, riads, and desert adventures.</p>
+                        <div class="card-price">From $1,899</div>
+                        <a href="booking.html" class="btn">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Special Offers -->
+        <section class="section">
+            <div class="section-title">
+                <h2>Special Offers</h2>
+            </div>
+            <div class="grid grid-2">
+                <div class="card fade-in-up" style="border: 2px solid var(--gold);">
+                    <div class="card-body">
+                        <h3 class="card-title" style="color: var(--gold);">Early Bird Special</h3>
+                        <p class="card-text">Book 6 months in advance and save up to 25% on select destinations.</p>
+                        <div class="card-price">Save up to 25%</div>
+                        <a href="booking.html" class="btn">Learn More</a>
+                    </div>
+                </div>
+                <div class="card fade-in-up" style="border: 2px solid var(--gold);">
+                    <div class="card-body">
+                        <h3 class="card-title" style="color: var(--gold);">Honeymoon Package</h3>
+                        <p class="card-text">Special romantic packages with complimentary upgrades and experiences.</p>
+                        <div class="card-price">From $4,999</div>
+                        <a href="booking.html" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="section">
+            <div style="text-align: center; background: var(--gray-light); padding: 3rem; border-radius: 15px;">
+                <h2>Can't Find What You're Looking For?</h2>
+                <p>Our travel experts can create a custom itinerary for any destination you have in mind.</p>
+                <a href="contact.html" class="btn">Contact Us</a>
+                <a href="booking.html" class="btn btn-outline">Custom Quote</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Luxury Travel</h3>
+                <p>Creating unforgettable luxury travel experiences since 2008. Your journey to extraordinary destinations starts here.</p>
+                <div style="margin-top: 1rem;">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="blog.html">Blog</a>
+                <a href="booking.html">Book Now</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Popular Destinations</h3>
+                <a href="#">Santorini, Greece</a>
+                <a href="#">Maldives</a>
+                <a href="#">Swiss Alps</a>
+                <a href="#">Bali, Indonesia</a>
+                <a href="#">Amalfi Coast, Italy</a>
+                <a href="#">Kyoto, Japan</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@luxurytravel.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Luxury Ave, Suite 100<br>New York, NY 10001</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Luxury Travel. All rights reserved. | Privacy Policy | Terms of Service</p>
+        </div>
+    </footer>
+
+    <script>
+        // Add fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in-up').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+
+        // Filter functionality
+        document.querySelector('.btn').addEventListener('click', function() {
+            // Add filter logic here
+            alert('Filters applied! This would filter the destinations based on selected criteria.');
+        });
+    </script>
+</body>
+</html>
