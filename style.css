@@ -608,7 +608,7 @@ p {
     }
     
     .btn-quote {
-        background: #dc3545 !important;
+        background: var(--gold) !important;
         color: var(--white) !important;
         text-align: center;
         border-radius: 5px;
@@ -619,7 +619,7 @@ p {
     }
     
     .btn-quote:hover {
-        background: #c82333 !important;
+        background: var(--gold-dark) !important;
         color: var(--white) !important;
     }
     
