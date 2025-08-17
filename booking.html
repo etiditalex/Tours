@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Your Trip - Luxury Travel</title>
+    <title>Book Your Trip - Axis Tours and Travel</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -12,7 +12,7 @@
     <!-- Header -->
     <header class="header">
         <nav class="nav-container">
-            <a href="index.html" class="logo">Luxury Travel</a>
+            <a href="index.html" class="logo">Axis Tours and Travel</a>
             <div class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
@@ -33,7 +33,7 @@
     <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');">
         <div class="hero-content">
             <h1>Book Your Dream Vacation</h1>
-            <p>Let us create your perfect luxury travel experience</p>
+            <p>Let us create your perfect East African travel experience</p>
         </div>
     </section>
 
@@ -49,14 +49,14 @@
                             <label for="destination">Destination</label>
                             <select id="destination" required>
                                 <option value="">Select Destination</option>
-                                <option value="santorini">Santorini, Greece</option>
-                                <option value="maldives">Maldives</option>
-                                <option value="swiss-alps">Swiss Alps</option>
-                                <option value="amalfi-coast">Amalfi Coast, Italy</option>
-                                <option value="bali">Bali, Indonesia</option>
-                                <option value="kyoto">Kyoto, Japan</option>
-                                <option value="paris">Paris, France</option>
-                                <option value="new-york">New York City, USA</option>
+                                <option value="diani">Diani Beach, Kenya</option>
+                                <option value="maasai-mara">Maasai Mara, Kenya</option>
+                                <option value="zanzibar">Zanzibar, Tanzania</option>
+                                <option value="watamu">Watamu, Kenya</option>
+                                <option value="mombasa">Mombasa, Kenya</option>
+                                <option value="tsavo">Tsavo, Kenya</option>
+                                <option value="serengeti">Serengeti, Tanzania</option>
+                                <option value="uganda">Uganda Gorilla Trekking</option>
                                 <option value="custom">Custom Destination</option>
                             </select>
                         </div>
@@ -64,12 +64,13 @@
                             <label for="tripType">Trip Type</label>
                             <select id="tripType" required>
                                 <option value="">Select Trip Type</option>
+                                <option value="safari">Wildlife Safari</option>
+                                <option value="beach">Beach Holiday</option>
+                                <option value="adventure">Adventure</option>
+                                <option value="cultural">Cultural Experience</option>
                                 <option value="honeymoon">Honeymoon</option>
                                 <option value="family">Family Vacation</option>
                                 <option value="business">Business Travel</option>
-                                <option value="adventure">Adventure</option>
-                                <option value="wellness">Wellness Retreat</option>
-                                <option value="cultural">Cultural Experience</option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -96,6 +97,7 @@
                             <label for="budget">Budget Range</label>
                             <select id="budget" required>
                                 <option value="">Select Budget</option>
+                                <option value="500-1000">$500 - $1,000</option>
                                 <option value="1000-2000">$1,000 - $2,000</option>
                                 <option value="2000-5000">$2,000 - $5,000</option>
                                 <option value="5000-10000">$5,000 - $10,000</option>
@@ -123,48 +125,48 @@
             </div>
             <div class="grid grid-3">
                 <div class="card fade-in-up">
-                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Santorini Honeymoon" class="card-img">
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Diani Beach Holiday" class="card-img">
                     <div class="card-body">
-                        <h3 class="card-title">Santorini Honeymoon Package</h3>
-                        <p class="card-text">7 days of romance in the most beautiful Greek island with luxury accommodations and private experiences.</p>
-                        <div class="card-price">From $3,999</div>
+                        <h3 class="card-title">Diani Beach Holiday Package</h3>
+                        <p class="card-text">7 days of beach paradise with luxury accommodations and water sports activities.</p>
+                        <div class="card-price">From $1,299</div>
                         <ul style="margin: 1rem 0; color: var(--gray-dark);">
-                            <li>Luxury cave hotel with private pool</li>
-                            <li>Private sunset cruise</li>
-                            <li>Wine tasting experience</li>
-                            <li>Couples spa treatment</li>
+                            <li>Beachfront resort with ocean view</li>
+                            <li>Snorkeling and diving trips</li>
+                            <li>Sunset dhow cruise</li>
+                            <li>Beach spa treatments</li>
                         </ul>
-                        <a href="#" class="btn" onclick="selectPackage('santorini-honeymoon')">Select Package</a>
+                        <a href="#" class="btn" onclick="selectPackage('diani-beach')">Select Package</a>
                     </div>
                 </div>
                 <div class="card fade-in-up">
-                    <img src="https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Maldives Luxury" class="card-img">
+                    <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Maasai Mara Safari" class="card-img">
                     <div class="card-body">
-                        <h3 class="card-title">Maldives Luxury Escape</h3>
-                        <p class="card-text">10 days in paradise with overwater bungalows, private butler service, and exclusive island experiences.</p>
-                        <div class="card-price">From $5,999</div>
+                        <h3 class="card-title">Maasai Mara Safari Adventure</h3>
+                        <p class="card-text">5 days of wildlife viewing with luxury tented camps and expert guides.</p>
+                        <div class="card-price">From $2,199</div>
                         <ul style="margin: 1rem 0; color: var(--gray-dark);">
-                            <li>Overwater villa with glass floor</li>
-                            <li>Private butler service</li>
-                            <li>Underwater dining experience</li>
-                            <li>Helicopter transfer</li>
+                            <li>Luxury tented camp accommodation</li>
+                            <li>Daily game drives with expert guides</li>
+                            <li>Maasai village cultural visit</li>
+                            <li>Bush dinner under the stars</li>
                         </ul>
-                        <a href="#" class="btn" onclick="selectPackage('maldives-luxury')">Select Package</a>
+                        <a href="#" class="btn" onclick="selectPackage('maasai-mara-safari')">Select Package</a>
                     </div>
                 </div>
                 <div class="card fade-in-up">
-                    <img src="https://images.unsplash.com/photo-1502602898534-47d3c0c4b0d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Swiss Alps Adventure" class="card-img">
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Zanzibar Island" class="card-img">
                     <div class="card-body">
-                        <h3 class="card-title">Swiss Alps Adventure</h3>
-                        <p class="card-text">8 days of mountain luxury with world-class skiing, gourmet dining, and breathtaking alpine views.</p>
-                        <div class="card-price">From $4,299</div>
+                        <h3 class="card-title">Zanzibar Island Escape</h3>
+                        <p class="card-text">6 days exploring Stone Town and pristine beaches with cultural experiences.</p>
+                        <div class="card-price">From $1,599</div>
                         <ul style="margin: 1rem 0; color: var(--gray-dark);">
-                            <li>Luxury ski-in/ski-out chalet</li>
-                            <li>Private ski instructor</li>
-                            <li>Gourmet dining experiences</li>
-                            <li>Helicopter sightseeing</li>
+                            <li>Historic Stone Town tour</li>
+                            <li>Spice plantation visit</li>
+                            <li>Beach resort accommodation</li>
+                            <li>Traditional dhow sailing</li>
                         </ul>
-                        <a href="#" class="btn" onclick="selectPackage('swiss-alps')">Select Package</a>
+                        <a href="#" class="btn" onclick="selectPackage('zanzibar-escape')">Select Package</a>
                     </div>
                 </div>
             </div>
@@ -247,8 +249,8 @@
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
-                <h3>Luxury Travel</h3>
-                <p>Creating unforgettable luxury travel experiences since 2008. Your journey to extraordinary destinations starts here.</p>
+                <h3>Axis Tours and Travel</h3>
+                <p>Creating unforgettable East African travel experiences. Your journey to extraordinary destinations starts here.</p>
                 <div style="margin-top: 1rem;">
                     <a href="#"><i class="fab fa-facebook"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
@@ -267,22 +269,23 @@
             </div>
             <div class="footer-section">
                 <h3>Popular Destinations</h3>
-                <a href="#">Santorini, Greece</a>
-                <a href="#">Maldives</a>
-                <a href="#">Swiss Alps</a>
-                <a href="#">Bali, Indonesia</a>
-                <a href="#">Amalfi Coast, Italy</a>
-                <a href="#">Kyoto, Japan</a>
+                <a href="#">Diani Beach, Kenya</a>
+                <a href="#">Maasai Mara, Kenya</a>
+                <a href="#">Zanzibar, Tanzania</a>
+                <a href="#">Watamu, Kenya</a>
+                <a href="#">Mombasa, Kenya</a>
+                <a href="#">Tsavo, Kenya</a>
             </div>
             <div class="footer-section">
                 <h3>Contact Info</h3>
-                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
-                <p><i class="fas fa-envelope"></i> info@luxurytravel.com</p>
-                <p><i class="fas fa-map-marker-alt"></i> 123 Luxury Ave, Suite 100<br>New York, NY 10001</p>
+                <p><i class="fas fa-phone"></i> +254 796 988 686</p>
+                <p><i class="fas fa-phone"></i> +254 780 460 617</p>
+                <p><i class="fas fa-envelope"></i> etiditalex@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Kenya, East Africa</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 Luxury Travel. All rights reserved. | Privacy Policy | Terms of Service</p>
+            <p>&copy; 2024 Axis Tours and Travel. All rights reserved. | Privacy Policy | Terms of Service</p>
         </div>
     </footer>
 
@@ -347,20 +350,20 @@
         // Package selection
         function selectPackage(packageName) {
             const packages = {
-                'santorini-honeymoon': {
-                    destination: 'Santorini, Greece',
-                    tripType: 'Honeymoon',
-                    price: '$3,999'
+                'diani-beach': {
+                    destination: 'Diani Beach, Kenya',
+                    tripType: 'Beach Holiday',
+                    price: '$1,299'
                 },
-                'maldives-luxury': {
-                    destination: 'Maldives',
-                    tripType: 'Luxury Escape',
-                    price: '$5,999'
+                'maasai-mara-safari': {
+                    destination: 'Maasai Mara, Kenya',
+                    tripType: 'Wildlife Safari',
+                    price: '$2,199'
                 },
-                'swiss-alps': {
-                    destination: 'Swiss Alps',
-                    tripType: 'Adventure',
-                    price: '$4,299'
+                'zanzibar-escape': {
+                    destination: 'Zanzibar, Tanzania',
+                    tripType: 'Cultural Experience',
+                    price: '$1,599'
                 }
             };
             
