@@ -1,21 +1,21 @@
-# Luxury Travel Website
+# Axis Tours and Travel Website
 
-A professional, responsive luxury travel website built with HTML, CSS, and JavaScript. This website showcases premium travel destinations and services with a sophisticated gold/white/black theme.
+A professional, responsive luxury travel website built with HTML, CSS, and JavaScript. This website showcases premium East African travel destinations and services with a sophisticated gold/white/black theme, specializing in Kenya's coast, wildlife safaris, and East African adventures.
 
 ## 🌟 Features
 
 ### Design & User Experience
 - **Professional Luxury Theme**: Gold, white, and black color scheme
-- **Responsive Design**: Fully responsive across all devices
+- **Responsive Design**: Fully responsive across all devices with hamburger menu for mobile
 - **Modern UI/UX**: Clean, elegant design with smooth animations
 - **Interactive Elements**: Hover effects, smooth scrolling, and fade-in animations
 
 ### Pages & Content
-- **Home Page**: Hero section, featured destinations, testimonials, and call-to-action
-- **About Us**: Company story, team profiles, values, and achievements
-- **Destinations**: Comprehensive destination showcase with filtering options
-- **Blog**: Travel articles, tips, and destination guides
-- **Booking Page**: Interactive booking form with package selection
+- **Home Page**: Hero section, featured East African destinations, testimonials, and call-to-action
+- **About Us**: Company story, founder profile (Alex Etidit), values, and achievements
+- **Destinations**: Comprehensive East African destination showcase with filtering options
+- **Blog**: Travel articles, tips, and destination guides focused on East Africa
+- **Booking Page**: Interactive booking form with East African package selection
 - **Contact Us**: Contact form, office information, and FAQ section
 
 ### Technical Features
@@ -24,6 +24,7 @@ A professional, responsive luxury travel website built with HTML, CSS, and JavaS
 - **Fast Loading**: Optimized images and efficient CSS
 - **Accessibility**: WCAG compliant design elements
 - **Form Validation**: Client-side validation for all forms
+- **Mobile-First**: Responsive hamburger menu for mobile devices
 
 ## 🚀 Getting Started
 
@@ -36,8 +37,8 @@ A professional, responsive luxury travel website built with HTML, CSS, and JavaS
 
 1. **Clone or Download the Repository**
    ```bash
-   git clone https://github.com/yourusername/luxury-travel-website.git
-   cd luxury-travel-website
+   git clone https://github.com/yourusername/axis-tours-travel-website.git
+   cd axis-tours-travel-website
    ```
 
 2. **Open the Project**
@@ -63,7 +64,7 @@ A professional, responsive luxury travel website built with HTML, CSS, and JavaS
 ## 📁 Project Structure
 
 ```
-luxury-travel-website/
+axis-tours-travel-website/
 ├── index.html          # Home page
 ├── about.html          # About us page
 ├── destinations.html   # Destinations page
@@ -71,8 +72,7 @@ luxury-travel-website/
 ├── booking.html       # Booking page
 ├── contact.html       # Contact page
 ├── style.css          # Main stylesheet
-├── README.md          # Project documentation
-└── .htaccess          # Apache configuration (if needed)
+└── README.md          # Project documentation
 ```
 
 ## 🎨 Customization
@@ -94,7 +94,7 @@ The website uses CSS custom properties for easy color customization. Edit the `:
 ```
 
 ### Content
-- **Images**: Replace image URLs with your own images
+- **Images**: Replace image URLs with your own East African destination images
 - **Text**: Update all text content in the HTML files
 - **Contact Information**: Update phone numbers, emails, and addresses
 - **Social Media**: Update social media links
@@ -103,6 +103,25 @@ The website uses CSS custom properties for easy color customization. Edit the `:
 The website uses Google Fonts (Poppins). To change fonts:
 1. Update the Google Fonts link in the `<head>` section
 2. Modify the `font-family` property in the CSS
+
+## 🌍 Featured Destinations
+
+### Kenya Coast
+- **Diani Beach**: Pristine white sand beaches and crystal-clear waters
+- **Watamu**: Marine national park and turtle watching
+- **Mombasa**: Historic coastal city with rich culture
+- **Malindi**: Ancient trading port and marine reserves
+
+### Kenya Safari
+- **Maasai Mara**: World-famous wildlife reserve and wildebeest migration
+- **Tsavo**: Kenya's largest national park with diverse wildlife
+- **Amboseli**: Stunning views of Mount Kilimanjaro
+- **Lake Nakuru**: Flamingo paradise and rhino sanctuary
+
+### East Africa
+- **Zanzibar**: Spice island with pristine beaches and Stone Town
+- **Tanzania**: Serengeti and Ngorongoro Crater
+- **Uganda**: Bwindi Impenetrable Forest and Queen Elizabeth National Park
 
 ## 🌐 Deployment
 
@@ -164,11 +183,13 @@ To make forms functional, you'll need to:
 2. Configure form action URLs
 3. Handle form submissions and email notifications
 
-## 📞 Support
+## 📞 Contact Information
 
-For support or questions:
-- Email: info@luxurytravel.com
-- Phone: +1 (555) 123-4567
+**Axis Tours and Travel**
+- **Founder**: Alex Etidit
+- **Phone**: +254 796 988 686 / +254 780 460 617
+- **Email**: etiditalex@gmail.com
+- **Location**: Kenya, East Africa
 
 ## 📄 License
 
@@ -176,11 +197,20 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 🙏 Acknowledgments
 
-- Images from [Unsplash](https://unsplash.com)
+- Images from [Unsplash](https://unsplash.com) featuring East African destinations
 - Icons from [Font Awesome](https://fontawesome.com)
 - Fonts from [Google Fonts](https://fonts.google.com)
 
 ## 🔄 Updates
+
+### Version 2.0.0
+- Updated company branding to "Axis Tours and Travel"
+- Added founder information (Alex Etidit)
+- Updated contact details and location
+- Refocused content on East African destinations
+- Added comprehensive destination coverage (Kenya Coast, Safari, East Africa)
+- Enhanced mobile responsiveness with hamburger menu
+- Updated all pages with new content and imagery
 
 ### Version 1.0.0
 - Initial release
