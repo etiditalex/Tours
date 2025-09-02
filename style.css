@@ -443,6 +443,118 @@ p {
     margin-bottom: 1rem;
 }
 
+/* Blog Post Styles */
+.blog-post {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.blog-post-content {
+    line-height: 1.8;
+    color: var(--gray-dark);
+}
+
+.blog-post-content .lead {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--black);
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: var(--gray-light);
+    border-left: 4px solid var(--gold);
+    border-radius: 5px;
+}
+
+.blog-post-content h2 {
+    color: var(--black);
+    margin: 2.5rem 0 1rem 0;
+    font-size: 1.8rem;
+    border-bottom: 2px solid var(--gold-light);
+    padding-bottom: 0.5rem;
+}
+
+.blog-post-content h3 {
+    color: var(--black);
+    margin: 2rem 0 1rem 0;
+    font-size: 1.4rem;
+}
+
+.blog-post-content p {
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.blog-post-content ul {
+    margin: 1.5rem 0;
+    padding-left: 2rem;
+}
+
+.blog-post-content li {
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+}
+
+.blog-post-content strong {
+    color: var(--black);
+    font-weight: 600;
+}
+
+/* Accommodation Grid for Blog Posts */
+.accommodation-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.accommodation-card {
+    background: var(--gray-light);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid var(--gold);
+}
+
+.accommodation-card h4 {
+    color: var(--black);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.accommodation-card ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.accommodation-card li {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+/* Responsive Design for Blog Posts */
+@media (max-width: 768px) {
+    .blog-post {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+    
+    .accommodation-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .blog-post-content h2 {
+        font-size: 1.6rem;
+    }
+    
+    .blog-post-content h3 {
+        font-size: 1.3rem;
+    }
+}
+
 /* Booking Form */
 .booking-form {
     background: var(--gray-light);
