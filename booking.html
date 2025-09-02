@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Trip - Axis Tours and Travel</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <div class="logo-globe"></div>
+                    <div class="logo-airplane"></div>
+                    <div class="logo-arc"></div>
+                </div>
+                <div class="logo-text">
+                    <div class="logo-text-main">Axis</div>
+                    <div class="logo-text-sub">Tours & Travel</div>
+                </div>
+            </a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="booking.html">Book Now</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="mobile-quote-btn"><a href="contact.html" class="btn-quote">Request A Quote</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');">
+        <div class="hero-content">
+            <h1>Book Your Dream Vacation</h1>
+            <p>Let us create your perfect East African travel experience</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Quick Booking -->
+        <section class="section">
+            <div class="booking-form">
+                <h2 style="text-align: center; margin-bottom: 2rem;">Quick Booking</h2>
+                <form id="bookingForm">
+                    <div class="grid grid-2">
+                        <div class="form-group">
+                            <label for="destination">Destination</label>
+                            <select id="destination" required>
+                                <option value="">Select Destination</option>
+                                <option value="diani">Diani Beach, Kenya</option>
+                                <option value="maasai-mara">Maasai Mara, Kenya</option>
+                                <option value="zanzibar">Zanzibar, Tanzania</option>
+                                <option value="watamu">Watamu, Kenya</option>
+                                <option value="mombasa">Mombasa, Kenya</option>
+                                <option value="tsavo">Tsavo, Kenya</option>
+                                <option value="serengeti">Serengeti, Tanzania</option>
+                                <option value="uganda">Uganda Gorilla Trekking</option>
+                                <option value="custom">Custom Destination</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="tripType">Trip Type</label>
+                            <select id="tripType" required>
+                                <option value="">Select Trip Type</option>
+                                <option value="safari">Wildlife Safari</option>
+                                <option value="beach">Beach Holiday</option>
+                                <option value="adventure">Adventure</option>
+                                <option value="cultural">Cultural Experience</option>
+                                <option value="honeymoon">Honeymoon</option>
+                                <option value="family">Family Vacation</option>
+                                <option value="business">Business Travel</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="departureDate">Departure Date</label>
+                            <input type="date" id="departureDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="returnDate">Return Date</label>
+                            <input type="date" id="returnDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="travelers">Number of Travelers</label>
+                            <select id="travelers" required>
+                                <option value="">Select Number</option>
+                                <option value="1">1 Traveler</option>
+                                <option value="2">2 Travelers</option>
+                                <option value="3">3 Travelers</option>
+                                <option value="4">4 Travelers</option>
+                                <option value="5">5 Travelers</option>
+                                <option value="6+">6+ Travelers</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Budget Range</label>
+                            <select id="budget" required>
+                                <option value="">Select Budget</option>
+                                <option value="500-1000">$500 - $1,000</option>
+                                <option value="1000-2000">$1,000 - $2,000</option>
+                                <option value="2000-5000">$2,000 - $5,000</option>
+                                <option value="5000-10000">$5,000 - $10,000</option>
+                                <option value="10000+">$10,000+</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="specialRequests">Special Requests</label>
+                        <textarea id="specialRequests" rows="4" placeholder="Tell us about any special requirements, preferences, or requests..."></textarea>
+                    </div>
+                    
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <button type="submit" class="btn" style="padding: 15px 40px; font-size: 1.1rem;">Get Quote</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Popular Packages -->
+        <section class="section">
+            <div class="section-title">
+                <h2>Popular Packages</h2>
+            </div>
+            <div class="grid grid-3">
+                <div class="card fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Diani Beach Holiday" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Diani Beach Holiday Package</h3>
+                        <p class="card-text">7 days of beach paradise with luxury accommodations and water sports activities.</p>
+                        <div class="card-price">From $1,299</div>
+                        <ul style="margin: 1rem 0; color: var(--gray-dark);">
+                            <li>Beachfront resort with ocean view</li>
+                            <li>Snorkeling and diving trips</li>
+                            <li>Sunset dhow cruise</li>
+                            <li>Beach spa treatments</li>
+                        </ul>
+                        <a href="#" class="btn" onclick="selectPackage('diani-beach')">Select Package</a>
+                    </div>
+                </div>
+                <div class="card fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Maasai Mara Safari" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Maasai Mara Safari Adventure</h3>
+                        <p class="card-text">5 days of wildlife viewing with luxury tented camps and expert guides.</p>
+                        <div class="card-price">From $2,199</div>
+                        <ul style="margin: 1rem 0; color: var(--gray-dark);">
+                            <li>Luxury tented camp accommodation</li>
+                            <li>Daily game drives with expert guides</li>
+                            <li>Maasai village cultural visit</li>
+                            <li>Bush dinner under the stars</li>
+                        </ul>
+                        <a href="#" class="btn" onclick="selectPackage('maasai-mara-safari')">Select Package</a>
+                    </div>
+                </div>
+                <div class="card fade-in-up">
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80" alt="Zanzibar Island" class="card-img">
+                    <div class="card-body">
+                        <h3 class="card-title">Zanzibar Island Escape</h3>
+                        <p class="card-text">6 days exploring Stone Town and pristine beaches with cultural experiences.</p>
+                        <div class="card-price">From $1,599</div>
+                        <ul style="margin: 1rem 0; color: var(--gray-dark);">
+                            <li>Historic Stone Town tour</li>
+                            <li>Spice plantation visit</li>
+                            <li>Beach resort accommodation</li>
+                            <li>Traditional dhow sailing</li>
+                        </ul>
+                        <a href="#" class="btn" onclick="selectPackage('zanzibar-escape')">Select Package</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Process -->
+        <section class="section">
+            <div class="section-title">
+                <h2>How It Works</h2>
+            </div>
+            <div class="grid grid-4">
+                <div style="text-align: center;">
+                    <div style="background: var(--gold); color: var(--black); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem; font-weight: bold;">1</div>
+                    <h3>Submit Request</h3>
+                    <p>Fill out our booking form with your preferences and requirements.</p>
+                </div>
+                <div style="text-align: center;">
+                    <div style="background: var(--gold); color: var(--black); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem; font-weight: bold;">2</div>
+                    <h3>Get Quote</h3>
+                    <p>Receive a personalized quote within 24 hours from our travel experts.</p>
+                </div>
+                <div style="text-align: center;">
+                    <div style="background: var(--gold); color: var(--black); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem; font-weight: bold;">3</div>
+                    <h3>Customize</h3>
+                    <p>Work with our team to refine your itinerary and add special experiences.</p>
+                </div>
+                <div style="text-align: center;">
+                    <div style="background: var(--gold); color: var(--black); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem; font-weight: bold;">4</div>
+                    <h3>Book & Travel</h3>
+                    <p>Confirm your booking and enjoy your luxury travel experience.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Book With Us -->
+        <section class="section">
+            <div class="section-title">
+                <h2>Why Book With Luxury Travel?</h2>
+            </div>
+            <div class="grid grid-2">
+                <div class="card fade-in-up">
+                    <div class="card-body">
+                        <h3 class="card-title"><i class="fas fa-star" style="color: var(--gold); margin-right: 0.5rem;"></i>Exclusive Access</h3>
+                        <p class="card-text">We have partnerships with the world's most prestigious hotels and resorts, giving you access to experiences not available to the general public.</p>
+                    </div>
+                </div>
+                <div class="card fade-in-up">
+                    <div class="card-body">
+                        <h3 class="card-title"><i class="fas fa-user-tie" style="color: var(--gold); margin-right: 0.5rem;"></i>Personal Service</h3>
+                        <p class="card-text">Every booking is handled by a dedicated travel consultant who ensures every detail is perfect for your journey.</p>
+                    </div>
+                </div>
+                <div class="card fade-in-up">
+                    <div class="card-body">
+                        <h3 class="card-title"><i class="fas fa-shield-alt" style="color: var(--gold); margin-right: 0.5rem;"></i>Travel Protection</h3>
+                        <p class="card-text">Comprehensive travel insurance and 24/7 support ensure your peace of mind throughout your journey.</p>
+                    </div>
+                </div>
+                <div class="card fade-in-up">
+                    <div class="card-body">
+                        <h3 class="card-title"><i class="fas fa-award" style="color: var(--gold); margin-right: 0.5rem;"></i>Best Value</h3>
+                        <p class="card-text">Our relationships with luxury providers allow us to offer competitive rates while maintaining the highest standards of service.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact for Custom Quote -->
+        <section class="section">
+            <div style="text-align: center; background: var(--gray-light); padding: 3rem; border-radius: 15px;">
+                <h2>Need a Custom Quote?</h2>
+                <p>Our travel experts are ready to create a personalized itinerary for your dream vacation.</p>
+                <a href="contact.html" class="btn">Contact Us</a>
+                <a href="tel:+15551234567" class="btn btn-outline">Call Now: +1 (555) 123-4567</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Axis Tours and Travel</h3>
+                <p>Creating unforgettable East African travel experiences. Your journey to extraordinary destinations starts here.</p>
+                <div style="margin-top: 1rem;">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="blog.html">Blog</a>
+                <a href="booking.html">Book Now</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Popular Destinations</h3>
+                <a href="#">Diani Beach, Kenya</a>
+                <a href="#">Maasai Mara, Kenya</a>
+                <a href="#">Zanzibar, Tanzania</a>
+                <a href="#">Watamu, Kenya</a>
+                <a href="#">Mombasa, Kenya</a>
+                <a href="#">Tsavo, Kenya</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-phone"></i> +254 796 988 686</p>
+                <p><i class="fas fa-phone"></i> +254 780 460 617</p>
+                <p><i class="fas fa-envelope"></i> etiditalex@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Kenya, East Africa</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Axis Tours and Travel. All rights reserved. | Privacy Policy | Terms of Service</p>
+        </div>
+    </footer>
+
+    <script>
+        // Hamburger Menu Functionality
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+        });
+
+        // Form validation and submission
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const destination = document.getElementById('destination').value;
+            const tripType = document.getElementById('tripType').value;
+            const departureDate = document.getElementById('departureDate').value;
+            const returnDate = document.getElementById('returnDate').value;
+            const travelers = document.getElementById('travelers').value;
+            const budget = document.getElementById('budget').value;
+            const specialRequests = document.getElementById('specialRequests').value;
+            
+            // Validate form
+            if (!destination || !tripType || !departureDate || !returnDate || !travelers || !budget) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // Validate dates
+            if (new Date(departureDate) >= new Date(returnDate)) {
+                alert('Return date must be after departure date.');
+                return;
+            }
+            
+            // Show success message
+            alert('Thank you for your booking request! Our travel expert will contact you within 24 hours with a personalized quote.');
+            
+            // Reset form
+            this.reset();
+        });
+
+        // Package selection
+        function selectPackage(packageName) {
+            const packages = {
+                'diani-beach': {
+                    destination: 'Diani Beach, Kenya',
+                    tripType: 'Beach Holiday',
+                    price: '$1,299'
+                },
+                'maasai-mara-safari': {
+                    destination: 'Maasai Mara, Kenya',
+                    tripType: 'Wildlife Safari',
+                    price: '$2,199'
+                },
+                'zanzibar-escape': {
+                    destination: 'Zanzibar, Tanzania',
+                    tripType: 'Cultural Experience',
+                    price: '$1,599'
+                }
+            };
+            
+            const selectedPackage = packages[packageName];
+            if (selectedPackage) {
+                document.getElementById('destination').value = selectedPackage.destination;
+                document.getElementById('tripType').value = selectedPackage.tripType;
+                alert(`Package selected: ${selectedPackage.destination} - ${selectedPackage.tripType}\nStarting from ${selectedPackage.price}`);
+            }
+        }
+
+        // Add fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in-up').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+
+        // Set minimum date for departure and return
+        const today = new Date().toISOString().split('T')[0];
+        document.getElementById('departureDate').min = today;
+        document.getElementById('returnDate').min = today;
+
+        // Update return date minimum when departure date changes
+        document.getElementById('departureDate').addEventListener('change', function() {
+            document.getElementById('returnDate').min = this.value;
+        });
+    </script>
+</body>
+</html>
