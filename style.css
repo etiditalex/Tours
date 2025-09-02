@@ -25,12 +25,12 @@ body {
 
 /* Color Variables */
 :root {
-    --gold: #D4AF37;
-    --gold-light: #F4E4BC;
+    --primary: #1A1A1A;
+    --gold: #FFD700;
+    --gold-light: #FFE55C;
     --gold-dark: #B8860B;
     --white: #FFFFFF;
     --black: #1A1A1A;
-    --primary: #1A1A1A;
     --gray-light: #F8F9FA;
     --gray: #6C757D;
     --gray-dark: #495057;
@@ -441,118 +441,6 @@ p {
     color: var(--gray);
     font-size: 0.9rem;
     margin-bottom: 1rem;
-}
-
-/* Blog Post Styles */
-.blog-post {
-    max-width: 800px;
-    margin: 0 auto;
-    background: var(--white);
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-}
-
-.blog-post-content {
-    line-height: 1.8;
-    color: var(--gray-dark);
-}
-
-.blog-post-content .lead {
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: var(--black);
-    margin-bottom: 2rem;
-    padding: 1.5rem;
-    background: var(--gray-light);
-    border-left: 4px solid var(--gold);
-    border-radius: 5px;
-}
-
-.blog-post-content h2 {
-    color: var(--black);
-    margin: 2.5rem 0 1rem 0;
-    font-size: 1.8rem;
-    border-bottom: 2px solid var(--gold-light);
-    padding-bottom: 0.5rem;
-}
-
-.blog-post-content h3 {
-    color: var(--black);
-    margin: 2rem 0 1rem 0;
-    font-size: 1.4rem;
-}
-
-.blog-post-content p {
-    margin-bottom: 1.5rem;
-    text-align: justify;
-}
-
-.blog-post-content ul {
-    margin: 1.5rem 0;
-    padding-left: 2rem;
-}
-
-.blog-post-content li {
-    margin-bottom: 0.8rem;
-    line-height: 1.6;
-}
-
-.blog-post-content strong {
-    color: var(--black);
-    font-weight: 600;
-}
-
-/* Accommodation Grid for Blog Posts */
-.accommodation-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    margin: 2rem 0;
-}
-
-.accommodation-card {
-    background: var(--gray-light);
-    padding: 1.5rem;
-    border-radius: 10px;
-    border-left: 4px solid var(--gold);
-}
-
-.accommodation-card h4 {
-    color: var(--black);
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
-}
-
-.accommodation-card ul {
-    margin: 1rem 0;
-    padding-left: 1.5rem;
-}
-
-.accommodation-card li {
-    margin-bottom: 0.5rem;
-    font-size: 0.95rem;
-}
-
-/* Responsive Design for Blog Posts */
-@media (max-width: 768px) {
-    .blog-post {
-        padding: 1.5rem;
-        margin: 1rem;
-    }
-    
-    .accommodation-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-    
-    .blog-post-content h2 {
-        font-size: 1.6rem;
-    }
-    
-    .blog-post-content h3 {
-        font-size: 1.3rem;
-    }
 }
 
 /* Booking Form */
@@ -1058,6 +946,118 @@ p {
     background: var(--gold-dark);
 }
 
+/* Blog Post Styles */
+.blog-post {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.blog-post-content {
+    line-height: 1.8;
+    color: var(--gray-dark);
+}
+
+.blog-post-content .lead {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--black);
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: var(--gray-light);
+    border-left: 4px solid var(--gold);
+    border-radius: 5px;
+}
+
+.blog-post-content h2 {
+    color: var(--black);
+    margin: 2.5rem 0 1rem 0;
+    font-size: 1.8rem;
+    border-bottom: 2px solid var(--gold-light);
+    padding-bottom: 0.5rem;
+}
+
+.blog-post-content h3 {
+    color: var(--black);
+    margin: 2rem 0 1rem 0;
+    font-size: 1.4rem;
+}
+
+.blog-post-content p {
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+.blog-post-content ul {
+    margin: 1.5rem 0;
+    padding-left: 2rem;
+}
+
+.blog-post-content li {
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+}
+
+.blog-post-content strong {
+    color: var(--black);
+    font-weight: 600;
+}
+
+/* Accommodation Grid for Blog Posts */
+.accommodation-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.accommodation-card {
+    background: var(--gray-light);
+    padding: 1.5rem;
+    border-radius: 10px;
+    border-left: 4px solid var(--gold);
+}
+
+.accommodation-card h4 {
+    color: var(--black);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.accommodation-card ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.accommodation-card li {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+/* Responsive Design for Blog Posts */
+@media (max-width: 768px) {
+    .blog-post {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+    
+    .accommodation-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .blog-post-content h2 {
+        font-size: 1.6rem;
+    }
+    
+    .blog-post-content h3 {
+        font-size: 1.3rem;
+    }
+}
+
 /* Hidden Gem Cards */
 .hidden-gem-card {
     background: var(--white);
@@ -1093,674 +1093,4 @@ p {
     color: var(--gray-dark);
     margin-bottom: 1.5rem;
     line-height: 1.6;
-}
-
-/* Beach Cards */
-.beach-card {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    align-items: center;
-    margin-bottom: 4rem;
-}
-
-.beach-card-reverse {
-    direction: rtl;
-}
-
-.beach-card-reverse > * {
-    direction: ltr;
-}
-
-.beach-image img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 15px;
-}
-
-.beach-content h2 {
-    color: var(--primary);
-    margin-bottom: 1rem;
-    font-size: 2.5rem;
-}
-
-.beach-subtitle {
-    color: var(--gold);
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-    font-weight: 500;
-}
-
-.beach-features ul {
-    list-style: none;
-    padding: 0;
-    margin: 1.5rem 0;
-}
-
-.beach-features li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0.8rem;
-    color: var(--gray-dark);
-}
-
-.beach-features i {
-    color: var(--gold);
-    margin-right: 1rem;
-    width: 20px;
-}
-
-.beach-accommodation {
-    background: var(--gray-light);
-    padding: 1.5rem;
-    border-radius: 10px;
-    margin: 1.5rem 0;
-}
-
-.beach-accommodation h3 {
-    color: var(--primary);
-    margin-bottom: 1rem;
-}
-
-/* Heritage Cards */
-.heritage-card {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    align-items: center;
-    margin-bottom: 4rem;
-}
-
-.heritage-card-reverse {
-    direction: rtl;
-}
-
-.heritage-card-reverse > * {
-    direction: ltr;
-}
-
-.heritage-image img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 15px;
-}
-
-.heritage-content h2 {
-    color: var(--primary);
-    margin-bottom: 1rem;
-    font-size: 2.5rem;
-}
-
-.heritage-subtitle {
-    color: var(--gold);
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-    font-weight: 500;
-}
-
-.heritage-features ul {
-    list-style: none;
-    padding: 0;
-    margin: 1.5rem 0;
-}
-
-.heritage-features li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0.8rem;
-    color: var(--gray-dark);
-}
-
-.heritage-features i {
-    color: var(--gold);
-    margin-right: 1rem;
-    width: 20px;
-}
-
-.heritage-partners {
-    background: var(--gray-light);
-    padding: 1.5rem;
-    border-radius: 10px;
-    margin: 1.5rem 0;
-}
-
-.heritage-partners h3 {
-    color: var(--primary);
-    margin-bottom: 1rem;
-}
-
-/* Nature Cards */
-.nature-card {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    align-items: center;
-    margin-bottom: 4rem;
-}
-
-.nature-card-reverse {
-    direction: rtl;
-}
-
-.nature-card-reverse > * {
-    direction: ltr;
-}
-
-.nature-image img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 15px;
-}
-
-.nature-content h2 {
-    color: var(--primary);
-    margin-bottom: 1rem;
-    font-size: 2.5rem;
-}
-
-.nature-subtitle {
-    color: var(--gold);
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-    font-weight: 500;
-}
-
-.nature-features ul {
-    list-style: none;
-    padding: 0;
-    margin: 1.5rem 0;
-}
-
-.nature-features li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0.8rem;
-    color: var(--gray-dark);
-}
-
-.nature-features i {
-    color: var(--gold);
-    margin-right: 1rem;
-    width: 20px;
-}
-
-.nature-partners {
-    background: var(--gray-light);
-    padding: 1.5rem;
-    border-radius: 10px;
-    margin: 1.5rem 0;
-}
-
-.nature-partners h3 {
-    color: var(--primary);
-    margin-bottom: 1rem;
-}
-
-/* Flavor Cards */
-.flavor-card {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    align-items: center;
-    margin-bottom: 4rem;
-}
-
-.flavor-card-reverse {
-    direction: rtl;
-}
-
-.flavor-card-reverse > * {
-    direction: ltr;
-}
-
-.flavor-image img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 15px;
-}
-
-.flavor-content h2 {
-    color: var(--primary);
-    margin-bottom: 1rem;
-    font-size: 2.5rem;
-}
-
-.flavor-subtitle {
-    color: var(--gold);
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-    font-weight: 500;
-}
-
-.flavor-features ul {
-    list-style: none;
-    padding: 0;
-    margin: 1.5rem 0;
-}
-
-.flavor-features li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0.8rem;
-    color: var(--gray-dark);
-}
-
-.flavor-features i {
-    color: var(--gold);
-    margin-right: 1rem;
-    width: 20px;
-}
-
-.flavor-partners {
-    background: var(--gray-light);
-    padding: 1.5rem;
-    border-radius: 10px;
-    margin: 1.5rem 0;
-}
-
-.flavor-partners h3 {
-    color: var(--primary);
-    margin-bottom: 1rem;
-}
-
-/* Spiritual Cards */
-.spiritual-card {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    align-items: center;
-    margin-bottom: 4rem;
-}
-
-.spiritual-card-reverse {
-    direction: rtl;
-}
-
-.spiritual-card-reverse > * {
-    direction: ltr;
-}
-
-.spiritual-image img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 15px;
-}
-
-.spiritual-content h2 {
-    color: var(--primary);
-    margin-bottom: 1rem;
-    font-size: 2.5rem;
-}
-
-.spiritual-subtitle {
-    color: var(--gold);
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-    font-weight: 500;
-}
-
-.spiritual-features ul {
-    list-style: none;
-    padding: 0;
-    margin: 1.5rem 0;
-}
-
-.spiritual-features li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0.8rem;
-    color: var(--gray-dark);
-}
-
-.spiritual-features i {
-    color: var(--gold);
-    margin-right: 1rem;
-    width: 20px;
-}
-
-.spiritual-partners {
-    background: var(--gray-light);
-    padding: 1.5rem;
-    border-radius: 10px;
-    margin: 1.5rem 0;
-}
-
-.spiritual-partners h3 {
-    color: var(--primary);
-    margin-bottom: 1rem;
-}
-
-/* Exploration Cards */
-.exploration-card {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    align-items: center;
-    margin-bottom: 4rem;
-}
-
-.exploration-card-reverse {
-    direction: rtl;
-}
-
-.exploration-card-reverse > * {
-    direction: ltr;
-}
-
-.exploration-image img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 15px;
-}
-
-.exploration-content h2 {
-    color: var(--primary);
-    margin-bottom: 1rem;
-    font-size: 2.5rem;
-}
-
-.exploration-subtitle {
-    color: var(--gold);
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-    font-weight: 500;
-}
-
-.exploration-features ul {
-    list-style: none;
-    padding: 0;
-    margin: 1.5rem 0;
-}
-
-.exploration-features li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0.8rem;
-    color: var(--gray-dark);
-}
-
-.exploration-features i {
-    color: var(--gold);
-    margin-right: 1rem;
-    width: 20px;
-}
-
-.exploration-activities {
-    background: var(--gray-light);
-    padding: 1.5rem;
-    border-radius: 10px;
-    margin: 1.5rem 0;
-}
-
-.exploration-activities h3 {
-    color: var(--primary);
-    margin-bottom: 1rem;
-}
-
-.exploration-partners {
-    background: var(--gray-light);
-    padding: 1.5rem;
-    border-radius: 10px;
-    margin: 1.5rem 0;
-}
-
-.exploration-partners h3 {
-    color: var(--primary);
-    margin-bottom: 1rem;
-}
-
-/* Grid Layouts */
-.grid-2 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    gap: 2rem;
-}
-
-.cultural-grid,
-.eco-grid,
-.culinary-grid,
-.adventure-grid,
-.impact-grid,
-.logistics-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin: 2rem 0;
-}
-
-.cultural-card,
-.eco-card,
-.culinary-card,
-.adventure-card,
-.impact-card,
-.logistics-card {
-    background: var(--white);
-    padding: 2rem;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-
-.cultural-card:hover,
-.eco-card:hover,
-.culinary-card:hover,
-.adventure-card:hover,
-.impact-card:hover,
-.logistics-card:hover {
-    transform: translateY(-5px);
-}
-
-.cultural-card i,
-.eco-card i,
-.culinary-card i,
-.adventure-card i,
-.impact-card i,
-.logistics-card i {
-    font-size: 3rem;
-    color: var(--gold);
-    margin-bottom: 1rem;
-}
-
-.cultural-card h3,
-.eco-card h3,
-.culinary-card h3,
-.adventure-card h3,
-.impact-card h3,
-.logistics-card h3 {
-    color: var(--primary);
-    margin-bottom: 1rem;
-}
-
-.cultural-card p,
-.eco-card p,
-.culinary-card p,
-.adventure-card p,
-.impact-card p,
-.logistics-card p {
-    color: var(--gray-dark);
-    line-height: 1.6;
-}
-
-/* Specialties Grid */
-.specialties-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin: 2rem 0;
-}
-
-.specialty-card {
-    background: var(--white);
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-
-.specialty-card:hover {
-    transform: translateY(-5px);
-}
-
-.specialty-img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.specialty-card h3 {
-    color: var(--primary);
-    margin: 1rem;
-    font-size: 1.3rem;
-}
-
-.specialty-card p {
-    color: var(--gray-dark);
-    margin: 0 1rem 1rem;
-    line-height: 1.6;
-}
-
-/* Planning Grid */
-.planning-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin: 2rem 0;
-}
-
-.planning-card {
-    background: var(--white);
-    padding: 2rem;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-
-.planning-card:hover {
-    transform: translateY(-5px);
-}
-
-.planning-card i {
-    font-size: 3rem;
-    color: var(--gold);
-    margin-bottom: 1rem;
-}
-
-.planning-card h3 {
-    color: var(--primary);
-    margin-bottom: 1rem;
-}
-
-.planning-card p {
-    color: var(--gray-dark);
-    line-height: 1.6;
-}
-
-/* Call to Action Section */
-.cta-section {
-    background: var(--gray-light);
-    padding: 4rem 2rem;
-    text-align: center;
-    border-radius: 15px;
-}
-
-.cta-content h2 {
-    color: var(--primary);
-    margin-bottom: 1rem;
-    font-size: 2.5rem;
-}
-
-.cta-content p {
-    color: var(--gray-dark);
-    margin-bottom: 2rem;
-    font-size: 1.1rem;
-}
-
-.cta-buttons {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.cta-buttons .btn {
-    margin: 0;
-}
-
-/* Hero Variations */
-.hero-secret-beaches {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
-}
-
-.hero-historical {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
-}
-
-.hero-nature {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
-}
-
-.hero-flavors {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
-}
-
-.hero-spiritual {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
-}
-
-.hero-nearby {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .beach-card,
-    .heritage-card,
-    .nature-card,
-    .flavor-card,
-    .spiritual-card,
-    .exploration-card {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-    
-    .grid-2 {
-        grid-template-columns: 1fr;
-    }
-    
-    .hidden-gem-card img {
-        height: 200px;
-    }
-    
-    .beach-image img,
-    .heritage-image img,
-    .nature-image img,
-    .flavor-image img,
-    .spiritual-image img,
-    .exploration-image img {
-        height: 300px;
-    }
-    
-    .eco-grid,
-    .planning-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-    
-    .eco-card,
-    .planning-card {
-        padding: 1.5rem;
-    }
-    
-    .eco-card i,
-    .planning-card i {
-        font-size: 2.5rem;
-    }
 }
